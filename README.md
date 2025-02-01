@@ -2,6 +2,22 @@ This project is a Multilingual FAQ System built with Django and Django REST Fram
 It allows users to create and manage FAQs with support for multiple languages, including English, Hindi, and Bengali. 
 The application uses Google Translate API for automatic translations and integrates a WYSIWYG editor for rich-text answers.
 
+Important package to install
+
+pip install django
+pip install django-ckeditor googletrans==4.0.0-rc1
+pip install djangorestframework
+
+
+Run the migrations to create the table in the database.
+
+python manage.py makemigrations faq
+python manage.py migrate
+
+To run project.
+python manage.py runserver
+
+
 
 API Usages
 API Root - http://127.0.0.1:8000/
